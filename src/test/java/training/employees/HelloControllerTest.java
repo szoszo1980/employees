@@ -21,6 +21,6 @@ class HelloControllerTest {
     @Test
     void testSayHello() {
         when(helloService.sayHello()).thenReturn("hello");
-        assertEquals("HELLO", helloController.sayHello());
+        assertEquals("hello", helloController.sayHello());
     }
 }
