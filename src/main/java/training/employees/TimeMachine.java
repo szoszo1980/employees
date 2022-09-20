@@ -1,12 +1,11 @@
 package training.employees;
 
-import lombok.AllArgsConstructor;
-
 import java.time.LocalDateTime;
 
+//@Component
 public class TimeMachine {
 
-    public LocalDateTime now(){
+    public LocalDateTime now() {
         return LocalDateTime.now();
     }
 }
