@@ -5,6 +5,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import training.employees.hello.HelloController;
+import training.employees.hello.HelloService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -21,6 +23,6 @@ class HelloControllerTest {
     @Test
     void testSayHello() {
         when(helloService.sayHello()).thenReturn("hello");
-        assertEquals("hello", helloController.sayHello());
+        assertEquals("HELLO", helloController.sayHello());
     }
 }

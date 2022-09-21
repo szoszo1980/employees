@@ -1,4 +1,7 @@
-package training.employees;
+package training.employees.hello;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 

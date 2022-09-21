@@ -6,6 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import training.employees.hello.HelloService;
+import training.employees.hello.TimeMachine;
 
 import java.time.LocalDateTime;
 
@@ -41,7 +43,7 @@ class HelloServiceTest {
         var message = service.sayHello();
 
         // then: assert
-        assertEquals("HELLO FROM SERVICE! 2022-01-01T10:00", message);
+        assertEquals("Hello from devtools service! 2022-01-01T10:00", message);
 
     }
 

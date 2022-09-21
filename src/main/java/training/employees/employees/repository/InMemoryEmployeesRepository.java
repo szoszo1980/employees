@@ -1,6 +1,7 @@
-package training.employees;
+package training.employees.employees.repository;
 
 import org.springframework.stereotype.Repository;
+import training.employees.employees.entity.Employee;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
-public class EmployeesRepository {
+// @Repository
+public class InMemoryEmployeesRepository {
 
     private AtomicLong idGenerator = new AtomicLong(0);
 
@@ -47,4 +48,8 @@ public class EmployeesRepository {
     public void delete(long id) {
         employees.removeIf(e -> e.getId() == id);
     }
+
+//    public void deleteAll() {
+//        employees.clear();
+//    }
 }
